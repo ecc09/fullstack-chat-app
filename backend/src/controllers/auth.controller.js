@@ -41,13 +41,12 @@ export const signup = async (req, res) => {
             res.status(400).json({message: "Invalid user data"});
         } 
 
-        
+  
     } catch (error) {
         console.log('errror in signup controller', error)
         res.status(500).json({message: "INTERNAL SERVER ERROR"});
         
     }
-    res.send("signup route")
 }
 
 export const login = async (req, res) => {

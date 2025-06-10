@@ -58,7 +58,7 @@ export const sendMessage = async (req, res) => {
 
         await newMessage.save();
 
-        // to do real time functionality with socket.io
+        // real time functionality with socket.io
         const receiverSocketId = getReceiverSocketId(receiverId);
         console.log("receiverSocketid: ", receiverSocketId);
         if (receiverSocketId) {
